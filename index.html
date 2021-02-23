@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruYum</title>
+    <link defer rel="stylesheet" href="./styles/style.css" />
+    <script>
+        const onInputClick = () => window.location = './menu-item-list-customer.html';
+        localStorage.getItem('Cart') ? undefined : localStorage.setItem('Cart', JSON.stringify([]));
+    </script>
+</head>
+<body>
+        <!--navbar-->
+        <nav class="navbar">
+            <a href="./index.html" id="logo">truYum<img  src="CrossedKnifeAndFork.svg" width="20" height="20" id="logo-image"></a>
+            <a href="./menu-item-list-admin.html" id="adminMenu">Admin login</a>
+      </nav>
+      <!--backgroud image-->
+      <div id="bg-pic">
+          <h3 id="greetings">Good <span style="color: blue;">Food</span> Good <span style="color: blue;">Life</span>!</h3>
+          <button type="button" id="OrderButton" onclick="onInputClick()">order</button>
+      </div>
+
+</body>
+</html>

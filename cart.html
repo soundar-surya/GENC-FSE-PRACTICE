@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./styles/customerPageCss.css"/>
+</head>
+<body>
+    <!--NAV bar-->
+    <header class="header">
+        <ul>
+            <li><a href="./index.html" id="logo">truYum<img  src="CrossedKnifeAndFork.svg" width="20" height="20" id="logo-image"></a></li>
+            <li style="float:right" id="cart"><a href="./cart.html">cart</a></li>
+            <li style="float:right" id="menu"><a href="./menu-item-list-customer.html">menu</a></li>
+        </ul>
+	</header> 
+    
+    <!--Menu Item List Admin-->
+    <div id="menu-item-list-admin">
+        <h3>Cart</h3>
+        <!--Table-->
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Free Delivery</th>
+                <th>Price</th>
+            </tr>
+        </table>
+    </div>
+    <h6 id="total">Total Rs. &emsp;</h6>
+    <h6 id="emptyCart"></h6>
+    <!--footer-->
+    <footer class="footer">
+        <h6 id="copyWrites">Copyright &#169; 2019</h6>
+    </footer>
+    <script src="scripts/cart.js"></script>
+</body>
+</html>
