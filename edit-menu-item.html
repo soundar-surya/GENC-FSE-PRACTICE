@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit-menu</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/editMenu.js"></script>
+</head>
+<body>
+    <!--NAV bar-->
+  <nav class="navbar">
+    <a href="./menu-item-list-admin.html">truYum</a>
+    <a href="./menu-item-list-admin.html" id="adminMenu">menu</a>
+  </nav>
+  <!--fields-->
+  <div id="menu">
+    <h3>Edit Menu Item</h3>
+  </div>
+  <div id="edit-menu-item">
+        <label for="name" id="label-name">Name</label><br/>
+        <input type="text" id="name"/>
+        <form onsubmit="return onInputSubmit();" >
+            <div id="grid-container">
+            <div id="Price">
+                <label for="price">Price (Rs)</label><br/>
+                <input type="text" id="price">
+            </div>
+            <div id="radio">
+                <label for="active" id="radio-label">Active</label><br />
+                <input type="radio" name="active" value="Yes">
+                    <label for="active">Yes</label>
+                <input type="radio" name="active" value="No">
+                    <label for="active">No</label>
+            </div>
+            <div id="dateOfLauch">
+                <label for="dol">Date of Launch</label>
+                <input type="date" id="dol"/>
+            </div>
+            <div id="Category">
+                <label for="category">category</label>
+                <select name="category" id="category">
+                    <option value="Main Course">Main Course</option>
+                    <option value="Starters">Starters</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Drinks">Drinks</option>
+                </select>
+            </div>
+            <div id="checkbox-container">
+                <input type="checkbox" id="freeDelivery" value="Free Delivery" />
+                <label for="freeDelivery" id="checkbox">Free Delivery</label>
+            </div>
+        </div>
+        <button type="submit" id="save">save</button>
+        </form>
+        </div>
+    <!--footer-->
+    <footer class="footer">
+        <h6>Copyright &#169; 2019</h6>
+    </footer>
+</div>
+</body>
+</html>
